@@ -1,0 +1,33 @@
+.cart-card {
+    display: flex;
+    max-width: 99%;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.cart-card .cart-img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.btn-remove {
+  border: 0px;
+  border-radius: 5px;
+  background-color: #0c68a1;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 7px 10px;
+  font-size: 20px;
+  margin-left: auto; /* Pushes it to the right */
+  
+}
+
+.cart-total{
+    display: flex;
+    margin-top: auto;
+}
