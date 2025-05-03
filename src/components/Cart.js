@@ -1,17 +1,14 @@
-
-import React from 'react';
-import { useBudget } from './BudgetContext';
-import './Cart.css';
+import React from "react";
+import { useBudget } from "./BudgetContext";
+import "./Cart.css";
 
 export const Cart = () => {
-  const { cartItems, removeFromCart } = useBudget();
-
-//   const getQuantity = () => {
-//     cartItems
-//   }
+  const { cartItems, removeFromCart, updateQuantity } = useBudget();
 
   const getTotalPrice = () =>
-        cartItems.reduce((acc, item) => acc + item.price, 0).toFixed(2);
+    (
+      cartItems?.reduce((acc, item) => acc + item.price * item.quantity, 0) || 0
+    ).toFixed(2);
 
   // Optional safeguard
   if (!Array.isArray(cartItems)) {
@@ -26,16 +23,46 @@ export const Cart = () => {
       ) : (
         <ul>
           {cartItems.map((item, index) => (
-          <div className='cart-card' key={index}>
-              <img src={item.image} alt={item.name} className='cart-img' />
-                      <div className="item-details">
-                          <h3>{item.name}     <h6>{item.quantity}</h6></h3>
-                          <p>${item.price.toFixed(2)}</p>
-                          
-                      </div>
-                      <button className="btn-remove" onClick={() => removeFromCart(item)}>Remove</button>           
-          </div>
-            
+            <div className="cart-card" key={item.id}>
+              {/* <img src={item.image} alt={item.name} className='cart-img' /> */}
+              <div className="item-details">
+                <h3>
+                  {item.name}
+                  <span>
+                    <button
+                      className={`store-name-${item.store
+                        ?.toLowerCase()
+                        .replace(/\s+/g, "-")}`}
+                    >
+                      {item.store}
+                    </button>
+                  </span>
+                </h3>
+
+                <p>${item.price.toFixed(2)}</p>
+              </div>
+              <div className="quantity">
+                <button
+                  className="btn-quantity"
+                  onClick={() => updateQuantity(item.id, -1)}
+                >
+                  -
+                </button>
+                <h6 className="quantity">{item.quantity}</h6>
+                <button
+                  className="btn-quantity"
+                  onClick={() => updateQuantity(item.id, 1)}
+                >
+                  +
+                </button>
+              </div>
+              <button
+                className="btn-remove"
+                onClick={() => removeFromCart(item)}
+              >
+                Remove
+              </button>
+            </div>
           ))}
         </ul>
       )}
@@ -45,4 +72,3 @@ export const Cart = () => {
     </div>
   );
 };
-
