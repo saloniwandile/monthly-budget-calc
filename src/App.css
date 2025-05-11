@@ -58,7 +58,7 @@
 
 .card {
   width: 200px;
-  height: 300px; /* fixed height */
+  height: 250px; /* fixed height */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -160,4 +160,46 @@
 
 .font-h4 {
   padding: 10px;
+}
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth; /* Optional for smooth scroll */
+  gap: 1rem;
+}
+
+.item-card {
+  flex-wrap: nowrap;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* .card {
+  min-width: 200px; 
+  flex-shrink: 0;
+  height: 250px;
+} */
+
+.carousel-container{
+  width: auto;
+  height: 350px; /* fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  background: white;
+  text-align: center;
+  box-sizing: border-box;
 }

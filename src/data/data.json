@@ -1,6 +1,9 @@
 [
-    { "id": 1, "name": "Banana", "price": 0.65, "image": "banana.jpeg", "quantity": 0 },
-    { "id": 2, "name": "Apples", "price": 0.8, "image": "apples.jpeg", "quantity": 0 },
-    { "id": 3, "name": "Tomatoes", "price": 0.8, "image": "tomatoes.jpeg", "quantity": 0 },
-    { "id": 4, "name": "Brussel Sprouts", "price": 0.8, "image": "tomatoes.jpeg", "quantity": 0 }
+    { "id": 1, "name": "Banana", "price": 0.65, "image": "banana.jpeg", "quantity": 0, "store":"walmart" },
+    { "id": 2, "name": "Apples", "price": 0.8, "image": "apples.jpeg", "quantity": 0, "store":"walmart" },
+    { "id": 3, "name": "Tomatoes", "price": 0.8, "image": "tomatoes.jpeg", "quantity": 0, "store":"walmart" },
+    { "id": 4, "name": "Bread", "price": 3, "image": "tomatoes.jpeg", "quantity": 0, "store":"price-chopper" },
+    { "id": 5, "name": "Paneer", "price": 5.99, "image": "tomatoes.jpeg", "quantity": 0, "store":"banyan" },
+    { "id": 6, "name": "Toor Dal", "price": 3.99, "image": "tomatoes.jpeg", "quantity": 0, "store":"banyan" },
+    { "id": 7, "name": "Dishwashing Liquid", "price": 1.75, "image": "tomatoes.jpeg", "quantity": 0, "store":"dollar-tree" }
   ]

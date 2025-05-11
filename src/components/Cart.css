@@ -1,37 +1,37 @@
 .cart-card {
-    display: flex;
-    max-width: 99%;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 10px 0;
-    background-color: #f9f9f9;
+  display: flex;
+  max-width: 99%;
+  height: 60px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
 }
 
 .cart-card .cart-img {
   width: 60px;
-  height: 60px;
+  height: 40px;
   margin: 10px;
 }
 
 .btn-remove {
   border: 0px;
   border-radius: 5px;
-  background-color: #C70039;
+  background-color: #c70039;
   color: #ffffff;
   cursor: pointer;
   padding: 7px 10px;
   font-size: 15px;
   margin: 10px;
   /* margin-left: auto; */
-  
 }
 
-.btn-quantity{
+.btn-quantity {
   border: 0px;
   border-radius: 5px;
-  background-color: #0c68a1 ;
+  background-color: #0c68a1;
   opacity: 0.5;
   color: #ffffff;
   cursor: pointer;
@@ -40,24 +40,21 @@
   margin-left: auto;
   height: 40px;
   width: 40px;
-
 }
 
-.cart-total{
-    display: flex;
-    margin-top: auto;
+.cart-total {
+  display: flex;
+  margin-top: auto;
 }
 
 .quantity {
-  display:flex;
+  display: flex;
   flex-direction: row;
   padding: 10px;
   margin-left: auto;
-  
-
 }
 
-.store-name{
+/* .store-name{
   background-color: #78C5DC;
   border: none;
   border-radius: 10px;
@@ -65,15 +62,15 @@
   margin: 5px;
   font-size: 20px;
 
-}
+} */
 
 .store-name-walmart {
-  background-color: #78C5DC;
+  background-color: #78c5dc;
   border: none;
   border-radius: 10px;
-  padding: 5px;
+  padding: 2px;
   margin: 5px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .store-name-price-chopper {
@@ -82,7 +79,7 @@
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .store-name-dollar-tree {
@@ -91,7 +88,7 @@
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .store-name-banyan {
@@ -100,5 +97,53 @@
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
+  font-size: 16px;
+}
+
+.store-name-custom {
+  background-color: #e080c6;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.store-name {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+  color: white; /* or black depending on bg */
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.item-details {
+  display: flex;
+}
+
+.cart-price {
+  margin: 5px;
   font-size: 20px;
+  margin-right: 9px;
+}
+
+.sort-items {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin-right: 0;
+}
+
+.view-toggle {
+  display: flex;
+  flex-direction: row-reverse;
 }
