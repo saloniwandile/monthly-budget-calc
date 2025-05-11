@@ -4,10 +4,10 @@
   height: 60px;
   align-items: center;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #BFECFF;
   border-radius: 10px;
   margin: 10px 0;
-  background-color: #f9f9f9;
+  background-color: #fff ;
 }
 
 .cart-card .cart-img {
@@ -136,14 +136,64 @@
   margin-right: 9px;
 }
 
-.sort-items {
+/* .sort-items {
   width: 40px;
   height: 40px;
   padding: 5px;
   margin-right: 0;
-}
+} */
+/* 
+.view-toggle {
+  display: inline;
+} */
+
+/* .cart-page-title{
+
+} */
 
 .view-toggle {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap; /* optional for responsiveness */
+}
+
+.cart-left h2 {
+  margin: 0;
+}
+
+.cart-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-items {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+.cart-card-date{
+  display: flex;
+  max-width: 99%;
+  height: auto;
+  /* align-items: center; */
+  padding: 10px;
+  border: 1px solid #BFECFF;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+
+.excel-btn{
+  padding: 10px;
+  margin: 10px;
+  background-color: #78C5DC;
+  border: none;
+  border-radius: 10px;
 }
